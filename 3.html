@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#cad3ff",
+                    "inverse-primary": "#b7c4ff",
+                    "secondary-fixed-dim": "#c5c7c8",
+                    "surface-container-low": "#f1f3ff",
+                    "surface": "#f9f9ff",
+                    "on-secondary-fixed-variant": "#454748",
+                    "surface-container-high": "#e1e8fd",
+                    "primary-container": "#1d4ed8",
+                    "surface-tint": "#2151da",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#dce2f7",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "inverse-on-surface": "#edf0ff",
+                    "on-secondary-fixed": "#191c1d",
+                    "secondary": "#5c5f60",
+                    "tertiary-container": "#4d5d73",
+                    "on-background": "#141b2b",
+                    "on-primary-fixed": "#001551",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "surface-bright": "#f9f9ff",
+                    "primary-fixed": "#dce1ff",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#dce2f7",
+                    "outline": "#747686",
+                    "on-surface-variant": "#434655",
+                    "background": "#f9f9ff",
+                    "surface-container": "#e9edff",
+                    "secondary-fixed": "#e1e3e4",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c4c5d7",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#c5d6f0",
+                    "primary": "#0037b0",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "surface-dim": "#d3daef",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#293040",
+                    "secondary-container": "#e1e3e4",
+                    "on-surface": "#141b2b",
+                    "on-primary-fixed-variant": "#0039b5",
+                    "on-secondary-container": "#626566",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "tertiary-fixed": "#d3e4fe",
+                    "tertiary": "#36455b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "1.5rem",
+                    "unit": "4px",
+                    "sm": "1rem",
+                    "gutter": "2rem",
+                    "xl": "6rem",
+                    "margin-safe": "5vw",
+                    "xs": "0.5rem",
+                    "lg": "3rem"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Manrope"],
+                    "label-caps": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-item {
+            transition: all 0.3s ease;
+        }
+        .bento-item:hover {
+            border-color: #0037b0;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface border-b border-outline-variant">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center px-gutter h-16">
+<span class="font-headline-md text-headline-md font-bold text-primary">PCTO Portfolio</span>
+<nav class="hidden md:flex items-center gap-md">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Experience</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Skills</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-md py-xs rounded-lg font-body-md hover:bg-primary-container transition-all">Download CV</button>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-gutter py-xl">
+<!-- Hero Section -->
+<section class="mb-xl">
+<div class="flex flex-col md:flex-row gap-lg items-center">
+<div class="flex-1 space-y-md">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Leadership Program</span>
+<h1 class="font-headline-xl text-headline-xl text-on-background">Progetto "Jump"</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Un percorso focalizzato sul benessere, la collaborazione e la riflessione comunitaria.
+                    </p>
+</div>
+<div class="flex-1 w-full aspect-video rounded-xl overflow-hidden shadow-sm">
+<img alt="Progetto Jump Hero" class="w-full h-full object-cover" data-alt="A collaborative workshop environment where young professionals are engaged in a strategic brainstorming session around a large wooden table. The room is filled with bright, natural sunlight streaming through large windows, creating a clean and productive atmosphere. Minimalist blue and white accents throughout the space reflect a professional and architectural aesthetic, highlighting growth and focused energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ60N1Y6esrao1sOTGJuepAZjWfW37eTy7QEZY3rD8KzPlkUMctzHKuXMSgmW4130NEGkGwwiFPzQlJibhpFsm_wDlvl8WTqvNJh5By-a2dJExSy4C0fTzFs7AAanhG1f0urEYjIK8l-giSDtIbqEOOQrICf_W-EVnFTXTnkLGC7RbVHo_EQcQFueWyoeRY_FaZ6XTirVW6Wy8cXolZEFAMP6d3T3oci7QL-b6iE9hkl9aux--NqTUvmuL3j1lsrZzoEiVgdl2pxM">
+</div>
+</div>
+</section>
+<!-- Descrizione Esperienza Section -->
+<section class="mb-xl grid grid-cols-1 md:grid-cols-12 gap-lg items-start">
+<div class="md:col-span-4 sticky top-24">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-sm">Descrizione Esperienza</h2>
+<div class="h-1 w-16 bg-primary rounded-full"></div>
+</div>
+<div class="md:col-span-8 bg-surface border border-outline-variant rounded-xl p-lg space-y-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Ho partecipato a giochi e attività di gruppo collaborando con gli altri e rendendomi disponibile all'ascolto, con lo scopo di riflettere sul benessere proprio e altrui. In biblioteca ho compreso il suo ruolo fondamentale per la comunità e mi sono messo in gioco leggendo un libro ai bambini della scuola materna e gestendo il relativo laboratorio.
+        </p>
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined" data-icon="local_library">local_library</span>
+<span class="font-label-caps text-label-caps">Esperienza in Biblioteca</span>
+</div>
+</div>
+</section>
+<!-- Impatto e Rapporto Tutor Section -->
+<section class="mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="p-lg bg-surface-container-low border border-outline-variant rounded-xl">
+<div class="flex items-center gap-sm mb-sm text-primary">
+<span class="material-symbols-outlined" data-icon="mood">mood</span>
+<h3 class="font-headline-md text-headline-md text-on-background">L'Ambiente</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                L'impatto è stato positivo ed è stato facile ambientarmi fin dal primo momento. I numerosi giochi e le attività che hanno caratterizzato gli incontri mi hanno permesso di rompere il ghiaccio velocemente.
+            </p>
+</div>
+<div class="p-lg bg-surface-container-low border border-outline-variant rounded-xl">
+<div class="flex items-center gap-sm mb-sm text-primary">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+<h3 class="font-headline-md text-headline-md text-on-background">Il Rapporto con i Tutor</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Il rapporto con i tutor è stato costante e costruttivo. Ho apprezzato in particolare i momenti di confronto offerti alla fine di ogni incontro, oltre alle attività ludiche.
+            </p>
+</div>
+</div>
+</section>
+<!-- Cosa ho imparato (Skills/Learnings) -->
+<section class="mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-lg text-center">Cosa ho imparato</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="p-lg bg-surface border border-outline-variant rounded-xl bento-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" data-icon="diversity_3">diversity_3</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Relazioni</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ho imparato a rispettare i tempi dell'altro, ad ascoltare e a valorizzare il dialogo per il benessere della comunità.</p>
+</div>
+<div class="p-lg bg-surface border border-outline-variant rounded-xl bento-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" data-icon="handshake">handshake</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Collaborazione</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ho compreso che collaborare per obiettivi comuni porta molta più soddisfazione rispetto a un risultato conquistato singolarmente.</p>
+</div>
+<div class="p-lg bg-surface border border-outline-variant rounded-xl bento-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" data-icon="forum">forum</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Confronto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ho capito l'importanza dei momenti di confronto in gruppo per esprimere la propria opinione e confrontarsi con quella degli altri.</p>
+</div>
+</div>
+</section>
+<!-- Percorso Formativo Section -->
+<section class="mb-xl bg-surface-container-low rounded-xl p-xl border border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
+<div class="md:col-span-8">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-md">Percorso Formativo</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Non ho utilizzato conoscenze scolastiche teoriche, ma sono state fondamentali le mie relazioni sociali quotidiane con famiglia, amici e compagni. Ho capito che i rapporti interpersonali e il dialogo sono aspetti fondamentali anche per la vita lavorativa e che il benessere personale non va mai messo in secondo piano.
+        </p>
+</div>
+<div class="md:col-span-4 flex flex-col items-center gap-md">
+<div class="p-lg bg-white rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-6xl" data-icon="psychology">psychology</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase text-center">Soft Skills Empowerment</span>
+</div>
+</div>
+</section>
+<!-- CTA / Footer -->
+<section class="mt-xl pt-xl border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center gap-md max-w-[1440px] mx-auto mb-xl">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background">Interessato al mio profilo?</h3>
+<p class="text-on-surface-variant mt-xs font-body-md">Visualizza le altre esperienze o scarica il mio curriculum completo.</p>
+</div>
+<div class="flex gap-sm">
+<button class="px-lg py-md border border-primary text-primary font-bold rounded hover:bg-surface-container-low transition-colors font-body-md">Vedi Tutte le Esperienze</button>
+<button class="px-lg py-md bg-primary text-white font-bold rounded hover:opacity-90 transition-all font-body-md">Contattami</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl border-t border-outline-variant bg-surface">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center px-gutter py-lg">
+<span class="font-headline-md text-headline-md font-bold text-primary mb-md md:mb-0">PCTO Portfolio</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 PCTO Student Portfolio. All rights reserved.</p>
+<div class="flex gap-md mt-md md:mt-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+```
+
+</body></html>
